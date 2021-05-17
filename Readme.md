@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [олег корней](https://up.htmlacademy.ru/htmlcss/31/user/1367315).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
