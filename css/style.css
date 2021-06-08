@@ -60,6 +60,7 @@
 }
 
 .wraper {
+  background-color: transparent;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
@@ -619,6 +620,7 @@
 }
 
 .footer__bottom {
+
   background-color: var(--basic-dark);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -927,6 +929,7 @@
 }
 
 .anyworld {
+  width: 100%;
   font-style: normal;
   font-weight: 400;
   background-color: var(--basic-gray);
