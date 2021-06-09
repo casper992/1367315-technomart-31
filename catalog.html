@@ -18,89 +18,93 @@
 </head>
 <body class="body">
 
-  <header class="header">
-    <div class="wraper">
-      <section class="header__top">
-          <section class="logo">
-              <a class="logo__link" href="./index.html">
-                  <img src="./source/header/logo.svg" class="logo__title">
-              </a>
+    <header class="header">
+        <section class="header__top">
+          <div class="wraper__top wraper">
+            <section class="logo">
+                <a class="logo__link" href="./index.html">
+                    <img src="./source/header/logo.svg" class="logo__image" width="108" height="18" >
+                </a>
+            </section>
+            <ul class="top__item">
+                <li class="top__list">
+                    <a class="top__link" href="#">
+                      <img class="top__link-img" src="./source/header/icon-search.svg" alt="иконка поиска" width="17" height="17">
+                    </a>
+                    <label for="search">поиск:</label>
+                    <input class="top__list-input" id="search" type="text" name="search">
+                </li>
+                <li class="top__list">
+                    <a class="top__link" href="#">
+                    <img class="top__link-img" src="./source/header/icon-bookmark.svg" alt="иконка закладки" width="14" height="16">
+                    <span>Закладки: 0</span>
+                    </a>
+                </li>
+                <li class="top__list">
+                    <a class="top__link" href="#">
+                        <img class="top__link-img" src="./source/header/icon-cart.svg" alt="иконка корзины" width="15" height="15">
+                        <span>корзина: 0</span>
+                    </a>
+                </li>
+            </ul>
+               <a class="top__button" href="#">оформить заказ</a>
+          </div>
+        </section>
+        <div class="wraper">
+          <div class="header__midle">
+            <section class="description">
+                <p class="description__text">Интернет-мазагин
+                строительных материалов
+                и инструментов для ремонта</p>
+            </section>
+            <section class="company">
+                <p class="company__tel">
+                    <img src="./source/header/icon-phone.svg" alt="иконка телефона" width="19" height="19">
+                    <a class="tel__link" href="tel:+78005558628">+7 800 555-86-28</a>
+                </p>
+                <p class="company__address">
+                    <address class="company__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+                </p>
+            </section>
+            <section class="company__buttons">
+                <a class="button__login button" href="#">
+                    <img src="./source/header/icon-login.svg" alt="иконка входа">
+                    войти
+                </a>
+                <a class="button__exit button" href="#">регистрация</a>
+            </section>
+          </div>
+          <section class="navigation">
+              <nav class="navigation__nav">
+                  <ul class="nav__item">
+                      <li class="nav__list">
+                          <a class="nav__link" href="./index.html">главная</a>
+                      </li>
+                      <li class="nav__list">
+                          <a class="nav__link" href="#">компания</a>
+                      </li>
+                      <li class="nav__list">
+                          <a class="nav__link" href="./catalog.html">каталог</a>
+                      </li>
+                      <li class="nav__list">
+                          <a class="nav__link" href="#">новости</a>
+                      </li>
+                      <li class="nav__list">
+                          <a class="nav__link" href="#">спецпредложение</a>
+                      </li>
+                      <li class="nav__list">
+                          <a class="nav__link" href="#">доставка</a>
+                      </li>
+                      <li class="nav__list">
+                          <a class="nav__link" href="#">контакты</a>
+                      </li>
+                  </ul>
+              </nav>
           </section>
-          <ul class="top__item">
-              <li class="top__list">
-                  <a class="top__link" href="#">
-                    <img src="./source/header/icon-shape.svg" alt="иконка поиска" width="17" height="17">
-                  </a>
-                  <label for="search">поиск:</label>
-                  <input class="top__list-input" id="search" type="text" name="search">
-              </li>
-              <li class="top__list">
-                  <a class="top__link" href="#">
-                  <img src="./source/header/icon-bookmark.svg" alt="иконка закладки" width="14" height="16">
-                  <span>Закладки: 0</span>
-                  </a>
-              </li>
-              <li class="top__list">
-                  <a class="top__link" href="#">
-                      <img src="./source/header/icon-cart.svg" alt="иконка корзины" width="15" height="15">
-                      <span>корзина: 0</span>
-                  </a>
-              </li>
-          </ul>
-             <a class="top__button" href="#">оформить заказ</a>
-      </section>
-      <div class="header__midle">
-        <section class="description">
-            <p class="description__text">интернет-мазагин</p>
-            <p class="description__text">строительных материалов</p>
-            <p class="description__text">и инструментов для ремонта</p>
-        </section>
-        <section class="company">
-            <p class="company__tel">
-                <img src="./source/header/icon-phone.svg" alt="иконка телефона" width="19" height="19">
-                <a class="tel__link" href="tel:+78005558628">+7 800 555-86-28</a>
-            </p>
-            <p class="company__address">
-                <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
-            </p>
-        </section>
-        <section class="company__buttons">
-            <a class="button" href="#">
-                <img src="./source/header/icon-login.svg" alt="иконка входа">
-                войти
-            </a>
-            <a class="button" href="#">регистрация</a>
-        </section>
-      </div>
-      <section class="navigation">
-          <nav class="navigation__nav">
-              <ul class="nav__item">
-                  <li class="nav__list">
-                      <a class="nav__link" href="./index.html">главная</a>
-                  </li>
-                  <li class="nav__list">
-                      <a class="nav__link" href="#">компания</a>
-                  </li>
-                  <li class="nav__list">
-                      <a class="nav__link" href="./catalog.html">каталог</a>
-                  </li>
-                  <li class="nav__list">
-                      <a class="nav__link" href="#">новости</a>
-                  </li>
-                  <li class="nav__list">
-                      <a class="nav__link" href="#">спецпредложение</a>
-                  </li>
-                  <li class="nav__list">
-                      <a class="nav__link" href="#">доставка</a>
-                  </li>
-                  <li class="nav__list">
-                      <a class="nav__link" href="#">контакты</a>
-                  </li>
-              </ul>
-          </nav>
-      </section>
-    </div>
-  </header>
+        </div>
+        <div class="header__bottom">
+        </div>
+    </header>
 
     <main class="main__catalog wraper">
         <section class="crumbs">
@@ -269,80 +273,90 @@
     </main>
 
     <footer class="footer">
-      <div class="wraper">
-        <section class="grid__containerfooter">
-          <section class="logo">
-            <a class="logo__link" href="./index.html">
-                <img src="./source/header/logo.svg" class="logo__title">
-            </a>
-            <p>
-                <address class="footer__text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
-            </p>
-            <p class="footer__text">
-                <a class="footer__tel" href="tel:+78005558628">+7 800 555-86-28</a>
-            </p>
-          </section>
-          <section class="footer__items">
-            <ul class="footer__item">
-                <li class="footer__list">
+        <section class="footer__top">
+          <div class="wraper">
+            <div class="top__flex">
+              <section class="logo">
+                <a class="logo__link logo__footer" href="./index.html">
+                    <img src="./source/header/logo.svg" class="logo__title">
+                </a>
+              </section>
+                <ul class="footer__item">
+                  <li class="footer__list">
                     <a class="item__white" href="#">компания</a>
-                </li>
-                <li class="footer__list">
+                  </li>
+                  <li class="footer__list">
                     <a class="item__white" href="#">новости</a>
-                </li>
-                <li class="footer__list">
-                    <a class="item__white" href="#">каталог</a>
-                </li>
-                <li class="footer__list">
+                  </li>
+                  <li class="footer__list">
+                    <a class="item__white" href="./catalog.html">каталог</a>
+                  </li>
+                  <li class="footer__list">
                     <a class="item__white" href="#">доставка</a>
-                </li>
-                <li class="footer__list">
+                  </li>
+                  <li class="footer__list">
                     <a class="item__white" href="#">контакты</a>
-                </li>
-            </ul>
-            <ul class="footer__item">
-                <li class="footer__list2">
-                    <a class="item__gold" href="#">материалы</a>
-                </li>
-                <li class="footer__list2">
-                    <a class="item__gold" href="#">техника</a>
-                </li>
-                <li class="footer__list2">
-                    <a class="item__gold" href="#">иннструмент</a>
-                </li>
-                <li class="footer__list2">
-                    <a class="item__gold" href="#">спецпредложения</a>
-                </li>
-            </ul>
-          </section>
+                  </li>
+                </ul>
+             </div>
+          </div>
+        </section>
+        <section class="footer__center">
+          <div class="wraper">
+            <div class="center__flex">
+              <section class="adres">
+                  <address class="footer__adress">
+                      г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+                  </address>
+                  <a class="footer__tel" href="tel:+78005558628">+7 800 555-86-28</a>
+              </section>
+                <ul class="footer__itemgold">
+                    <li class="footer__listgold">
+                        <a class="item__gold" href="#">материалы</a>
+                    </li>
+                    <li class="footer__listgold">
+                        <a class="item__gold" href="#">техника</a>
+                    </li>
+                    <li class="footer__listgold">
+                        <a class="item__gold" href="#">иннструмент</a>
+                    </li>
+                    <li class="footer__listgold">
+                        <a class="item__gold" href="#">спецпредложения</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
         </section>
         <section class="footer__bottom">
-          <section class="rights">
-              <p class="rights__text">
-                  © 2010–2021 Компания «Техномарт»<br>
-                  Все права защищены
-              </p>
-          </section>
-          <section class="socials">
-              <ul class="socials__item">
-                  <li class="socials__list1">
-                  </li>
-                  <li class="socials__list2">
-                  </li>
-                  <li class="socials__list3">
-                  </li>
-              </ul>
-          </section>
-          <section class="feedback">
-              <h3 class="feedback__title">Обратная связь: </h3>
-              <p class="feedback__text gold">mail@htmlacademy.ru</p>
-          </section>
-          <section class="developed">
-            <h3 class="developed__title">разработано -</h3>
-            <p class="developed__text gold">htmlacademy.ru</p>
-          </section>
+          <div class="wraper">
+            <div class="flex__bottom">
+              <section class="rights">
+                  <p class="rights__text">
+                      © 2010–2021 Компания «Техномарт»<br>
+                      Все права защищены
+                  </p>
+              </section>
+              <section class="socials">
+                  <ul class="socials__item">
+                      <li class="socials__list1">
+                      </li>
+                      <li class="socials__list2">
+                      </li>
+                      <li class="socials__list3">
+                      </li>
+                  </ul>
+              </section>
+              <section class="feedback">
+                  <h3 class="feedback__title">Обратная связь: </h3>
+                  <p class="feedback__text gold">mail@htmlacademy.ru</p>
+              </section>
+              <section class="developed">
+                <h3 class="developed__title">разработано -</h3>
+                <p class="developed__text gold">htmlacademy.ru</p>
+              </section>
+            </div>
+          </div>
         </section>
-      </div>
     </footer>
 </body>
 </html>
