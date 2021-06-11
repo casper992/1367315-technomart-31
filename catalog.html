@@ -113,17 +113,17 @@
                   <img src="./source/catalog/icon-home.svg" alt="икона домика" width="14" height="12">
                 </li>
                 <li class="crumbs__list">
-                  <img src="./source/index/broad-icon.svg" alt=">">
+                  <img class="crumbs__img" src="./source/index/broad-icon.svg" alt=">">
                 </li>
                 <li class="crumbs__list">каталог
                 </li>
                 <li class="crumbs__list">
-                  <img src="./source/index/broad-icon.svg" alt=">">
+                  <img class="crumbs__img" src="./source/index/broad-icon.svg" alt=">">
                 </li>
                 <li class="crumbs__list">инструмент
                 </li>
                 <li class="crumbs__list">
-                  <img src="./source/index/broad-icon.svg" alt=">">
+                  <img class="crumbs__img" src="./source/index/broad-icon.svg" alt=">">
                  </li>
                 <li class="crumbs__list">перформаторы</li>
             </ul>
@@ -131,34 +131,48 @@
         <section class="catalog__maintitle">
           <h2 class="title">Перфораторы</h2>
        </section>
-       <div class="section grid__containerproduct">
+       <div class="grid__containerproduct">
         <section class="filter">
             <h3 class="filter__title">фильтр:</h3>
-            <h3 class="filter__legend">цена</h3>
+            <h3 class="filter__legend">цена:</h3>
             <p>
               <p></p>
             </p>
             <span>0</span> - <span>30000</span>
             <form  class="filter__form" action="https://echo.htmlacademy.ru" method="GET">
-                <fieldset>
+                <fieldset class="filter__fieldset1 fieldset">
                     <legend class="filter__legend">производители</legend>
-                        <input class="filterform__checkbox" id="check__bosh" type="checkbox" name="bosh" checked>
-                        <label for="check__bosh">BOSH</label>
-                        <input class="filterform__checkbox" id="check__inter" type="checkbox" name="inter">
-                        <label for="check__inter">ИНТЕРСКОЛ</label>
-                        <input class="filterform__checkbox" id="check__makita" type="checkbox" name="makita" checked>
-                        <label for="check__makita">MAKIta</label>
-                        <input class="filterform__checkbox" id="check__devalt" type="checkbox" name="devalt">
-                        <label for="check__devalt">Dewalt</label>
-                        <input class="filterform__checkbox" id="check__hitachi" type="checkbox" name="hitachi">
-                        <label for="check__hitachi">Hitachi</label>
+                      <label class="filterform__label" for="check__bosh">
+                          <input class="filterform__checkbox" id="check__bosh" type="checkbox" name="bosh" checked>
+                        BOSH
+                      </label>
+                       <label class="filterform__label" for="check__inter">
+                          <input class="filterform__checkbox" id="check__inter" type="checkbox" name="inter">
+                        ИНТЕРСКОЛ
+                      </label>
+                      <label class="filterform__label" for="check__makita">
+                          <input class="filterform__checkbox" id="check__makita" type="checkbox" name="makita" checked>
+                        MAKIta
+                      </label>
+                      <label class="filterform__label" for="check__devalt">
+                          <input class="filterform__checkbox" id="check__devalt" type="checkbox" name="devalt">
+                        Dewalt
+                      </label>
+                      <label class="filterform__label" for="check__hitachi">
+                          <input class="filterform__checkbox" id="check__hitachi" type="checkbox" name="hitachi">
+                        Hitachi
+                      </label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter__fieldset2 fieldset">
                     <legend class="filter__legend">питание</legend>
-                        <input id="radio__akk" type="radio" name="akk" checked>
-                        <label for="radio__akk">Аккумуляторные</label>
-                        <input id="radio__aset" type="radio" name="set" >
-                        <label for="radio__set">Сетевые</label>
+                      <label class="filterform__label" for="radio__akk">
+                        <input id="radio__akk" class="filterform__radio" type="radio" name="akk" checked>
+                        Аккумуляторные
+                      </label>
+                      <label class="filterform__label" for="radio__set">
+                        <input id="radio__aset" class="filterform__radio" type="radio" name="set" >
+                        Сетевые
+                      </label>
                 </fieldset>
                 <button class="filterform__button" type="submit">показать</button>
             </form>

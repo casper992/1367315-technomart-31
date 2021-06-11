@@ -863,9 +863,10 @@
 .developed__text {
 }
 
-/*    catalog      */
+                /*    catalog      */
 
 .main__catalog {
+  margin-top: -45px;
 }
 
 .crumbs {
@@ -880,15 +881,28 @@
 
 .crumbs__item {
   display: flex;
+  align-items: center;
 }
 
 .crumbs__list {
   margin-right: 16px;
 }
 
-.catalog__maintitle {
-  background-color: var(--basic-gray);
+.crumbs__img {
+  align-self: center;
+  margin-top: 2px;
 }
+
+.catalog__maintitle {
+  width: 100%;
+  height: 89px;
+  background-color: var(--basic-gray);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
 
 .grid__containerproduct {
   display: grid;
@@ -897,42 +911,66 @@
 }
 
 .filter {
+  font-family: PT Sans;
+  font-style: normal;
 }
 
 .filter__title {
+  width: 220px;
+  height: 38px;
   background-color: var(--basic-lightyelow);
-  font-family: PT Sans;
-  font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  margin-bottom: 14px;
 }
 
 .filter__form {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
-  color: black;
+  color: var(--basic-black);
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
 }
 
 .filter__legend {
-  font-family: PT Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
-  color: black;
+  color: var(--basic-black);
+  margin-bottom: 10px;
 }
 
-.filterform__checkbox {
+.filterform__label {
+  margin-bottom: 20px;
+}
+
+.filterform__label:last-child {
   /* background-color: #C5C5C5;*/
+  margin-bottom: 20px;
+  margin-right: 12px;
+}
+
+.filterform__checkbox,
+.filterform__radio {
+  /* background-color: #C5C5C5;*/
+margin-right: 12px;
+font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 19px;
 }
 
 .filterform__button {
+  width: 220px;
+  height: 38px;
   text-transform: uppercase;
   font-family: PT Sans;
   font-style: normal;
@@ -942,6 +980,7 @@
   color: black;
   background-color: var(--basic-white);
   border: 1px solid #e5e5e5;
+  margin-top: 37px;
 }
 
 .container__mainsort {
