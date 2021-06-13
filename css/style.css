@@ -877,6 +877,7 @@
   line-height: 18px;
   color: black;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .crumbs__item {
@@ -991,6 +992,7 @@ line-height: 19px;
 
 .sort {
   display: flex;
+  align-items: center;
   grid-column: 1 / -1;
   text-transform: uppercase;
   font-family: PT Sans;
@@ -999,6 +1001,7 @@ line-height: 19px;
   font-size: 13px;
   line-height: 18px;
   background-color: var(--basic-lightyelow);
+  margin-bottom: 28px;
 }
 
 .sort__title {
@@ -1052,14 +1055,23 @@ line-height: 19px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  margin-bottom: 48px;
 }
 
 .punchers__item {
-  display: flex;
-  flex-wrap: wrap;
+ /* width: 680px;
+  height: 1000px;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+  
 }
 
 .punchers__list {
+  background: var(--basic-white);
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
   width: 220px;
 }
 
@@ -1082,6 +1094,9 @@ line-height: 19px;
 }
 
 .pages {
+  width: 300px;
+  height: 38px;
+ 
 }
 
 .pages__item {
@@ -1093,6 +1108,7 @@ line-height: 19px;
   line-height: 18px;
   text-align: center;
   color: #000000;
+  
 }
 
 .pages__list:first-child {
@@ -1101,11 +1117,24 @@ line-height: 19px;
 }
 
 .pages__list {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--basic-white);
   border: 1px solid #e5e5e5;
   box-sizing: border-box;
   border-radius: 2px;
   margin-right: 10px;
+}
+
+.pages__list:first-child {
+  background-color: var(--basic-red);
+}
+
+.pages__list:last-child {
+  width:140px ;
 }
 
 .pages__link {
@@ -1119,20 +1148,25 @@ line-height: 19px;
 
 .anyworld {
   width: 100%;
+  height: 261px;
+  font-family: Cuprum;
   font-style: normal;
   font-weight: 400;
   background-color: var(--basic-gray);
   color: black;
+  padding-top: 64px;
 }
 
 .anyworld__title {
-  font-family: Cuprum;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .anyworld__text {
+  width: 908px;
+  height: 74px;
   font-family: PT Sans;
   font-size: 13px;
   line-height: 24px;
