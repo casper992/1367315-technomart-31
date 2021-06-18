@@ -113,32 +113,78 @@
 }
 
 .top__list:first-child {
-  margin-right: 90px;
+  margin-right: 70px;
 }
 
 .top__list:nth-child(2) {
-  margin-right: 48px;
+  margin-right: 70px;
 }
 
 .top__list:last-child {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .top__item .top__list:not(:first-child) {
 }
 
 .top__list-input {
-  /*display: none;*/
+  background-color: transparent;
 }
 
-/*.top__list-input:active,
-.top__list-input:focus{
-  display: initial;
-}*/
-
 .top__link {
+  display: inline-block;
   text-decoration: none;
   color: var(--basic-white);
+}
+
+.top__link1 {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.top__link1::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: url(/source/header/icon-search.svg) no-repeat 0 0;
+  margin-right: 10px;
+}
+
+.top__link2 {
+  width: 83px;
+  height: 24px;
+  position: relative;
+}
+
+.top__link2::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -23px;
+  width: 18px;
+  height: 18px;
+  background: url(/source/header/icon-bookmark.svg) no-repeat 0 0;
+}
+
+.top__link3 {
+  width: 75px;
+  height: 24px;
+  position: relative;
+}
+
+.top__link3::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -23px;
+  width: 18px;
+  height: 18px;
+  background: url(/source/header/icon-cart.svg) no-repeat 0 0;
 }
 
 .top__link-img {
@@ -188,6 +234,7 @@
 }
 
 .company__tel {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,6 +254,18 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  padding-left: 36px;
+}
+
+.tel__link::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 20px;
+  height: 20px;
+  background: url(/source/header/icon-phone.svg) no-repeat 0 0;
+  text-align: center;
 }
 
 .company__address {
@@ -235,8 +294,20 @@
 }
 
 .button__login {
+  position: relative;
   width: 121px;
   height: 45px;
+  padding-left: 20px;
+}
+
+.button__login::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  width: 20px;
+  height: 17px;
+  background: url(/source/header/icon-login.svg) no-repeat 0 0;
 }
 
 .button__login > img {
