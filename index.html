@@ -420,9 +420,89 @@
               <img src="./source/index/map.jpg" alt="карта" />
             </a>
           </figure>
-          <a class="contacts__button red__button" href="#"
-            >Заблудились? НапиШИТЕ НАМ!</a
-          >
+          <button class="contacts__button red__button" type="button">
+            Заблудились? НапиШИТЕ НАМ!
+          </button>
+        </section>
+        <section class="popup__feedback">
+          <div class="feedback__container">
+            <div class="top__line"></div>
+            <h3 class="popup__title catalog__visibletitle">
+              форма для обратной связи
+            </h3>
+            <button
+              class="popup__close"
+              type="button"
+              aria-label="кнопка закрыть"
+            ></button>
+            <form
+              class="popup__form"
+              action="https://echo.htmlacademy.ru/courses"
+              method="POST"
+            >
+              <div class="container__topline">
+                <label class="popup__label" for="feedback__name"
+                  >Ваше имя:
+                  <input
+                    class="popup__input popup__name"
+                    id="feedback__name"
+                    type="text"
+                    placeholder="Имя Фамилия"
+                    required
+                /></label>
+                <label class="popup__label" for="feedback__email"
+                  >Ваш e-mail:
+                  <input
+                    class="popup__input"
+                    id="feedback__email"
+                    type="email"
+                    placeholder="email@example.com"
+                    required
+                /></label>
+              </div>
+              <label
+                class="popup__label textarea__label"
+                for="feedback__massage"
+                >Текст письма:
+                <textarea
+                  class="popup__textarea"
+                  id="feedback__massage"
+                  placeholder="В свободной форме"
+                  required
+                >
+                </textarea>
+              </label>
+              <div class="container__button">
+                <button class="popup__button" type="submit">отправить</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="popup__map">
+          <div class="map__container">
+            <div class="top__line map__line"></div>
+            <button
+              class="popup__close map__close"
+              type="button"
+              aria-label="кнопка закрыть"
+            >
+              <img
+                src="./source/index/icon-close.svg"
+                alt="кнопка закрытия формы"
+                width="21"
+                height="21"
+              />
+            </button>
+            <iframe
+              class="map__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.2050418192967!2d30.316995733631252!3d59.96830647393603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sby!4v1624198828886!5m2!1sru!2sby"
+              width="943"
+              height="449"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
         </section>
       </div>
     </main>
@@ -522,78 +602,7 @@
         </div>
       </section>
     </footer>
-
-    <section class="popit__feedback">
-      <div class="top__line"></div>
-      <h3 class="popit__title catalog__visibletitle">
-        форма для обратной связи
-      </h3>
-      <a class="popit__close" href="#">
-        <img
-          src="./source/index/icon-close.svg"
-          alt="кнопка закрытия формы"
-          width="21"
-          height="21"
-        />
-      </a>
-      <form
-        class="popit__form"
-        action="https://echo.htmlacademy.ru/courses"
-        method="POST"
-      >
-        <div class="container__topline">
-          <label class="popit__label" for="feedback__name"
-            >Ваше имя:
-            <input
-              class="popit__input"
-              id="feedback__name"
-              type="text"
-              placeholder="Имя Фамилия"
-          /></label>
-          <label class="popit__label" for="feedback__email"
-            >Ваш e-mail:
-            <input
-              class="popit__input"
-              id="feedback__email"
-              type="email"
-              placeholder="email@example.com"
-          /></label>
-        </div>
-        <label class="popit__label textarea__label" for="feedback__massage"
-          >Текст письма:
-
-          <textarea
-            class="popit__textarea"
-            id="feedback__massage"
-            placeholder="В свободной форме"
-          >
-          </textarea>
-        </label>
-        <div class="container__button">
-          <button class="popit__button" type="submit">отправить</button>
-        </div>
-      </form>
-    </section>
-
-    <section class="popit__map">
-      <div class="top__line map__line"></div>
-      <a class="popit__close map__close" href="#">
-        <img
-          src="./source/index/icon-close.svg"
-          alt="кнопка закрытия формы"
-          width="21"
-          height="21"
-        />
-      </a>
-      <iframe
-        class="map__iframe"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.2050418192967!2d30.316995733631252!3d59.96830647393603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sby!4v1624198828886!5m2!1sru!2sby"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-    </section>
+    <script src="/js/popup-feedback.js"></script>
+    <script src="/js/popup-map.js"></script>
   </body>
 </html>
