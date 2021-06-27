@@ -966,7 +966,7 @@
   margin-bottom: 22px;
 }
 
-.contacts__map {
+.button__map {
   width: 300px;
   height: 158px;
   margin-bottom: 25px;
@@ -1918,6 +1918,32 @@
   }
 }
 
+@keyframes map {
+  0% {
+    transform: translateY(-1000px) scale(0.1);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(0.2);
+    opacity: 0.2;
+  }
+  40% {
+    transform: scale(0.4);
+    opacity: 0.4;
+  }
+  60% {
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+  80% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*    POPUP */
 
 .popup__feedback {
@@ -2040,6 +2066,7 @@
 
 .popup__map-visible {
   display: block;
+  animation: map 1s;
 }
 
 .map__container {
