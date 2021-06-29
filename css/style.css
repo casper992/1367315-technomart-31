@@ -57,6 +57,7 @@
 }
 
 .wraper {
+  position: relative;
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
@@ -1923,6 +1924,86 @@
 
 .pages__link1 {
   color: white;
+}
+
+.popup__buy {
+  display: none;
+  position: absolute;
+  top: 314px;
+  left: 179px;
+  width: 620px;
+  height: 282px;
+  background-color: var(--basic-white);
+  z-index: 20;
+}
+
+.popup__visible {
+  display: block;
+  z-index: 20;
+}
+
+.popupbuy__container {
+  position: relative;
+}
+
+.popupcontainer__title {
+  position: relative;
+  height: 163px;
+  background-color: var(--basic-white);
+  padding-top: 66px;
+}
+
+.popupbuy__title {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.popupbuy__title::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 48px;
+  left: 81px;
+  background: var(--basic-green)
+    url(/source/catalog/icon-popupbuy-background.svg) no-repeat 15px 20px;
+  border-radius: 50%;
+}
+
+.popupbuy__containerbutton {
+  height: 112px;
+  width: 100%;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupbuy__button {
+  width: 192px;
+  height: 38px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.button__order {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  margin-right: 10px;
+}
+
+.button__continue {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .anyworld {

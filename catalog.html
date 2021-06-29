@@ -306,7 +306,7 @@
                   <p class="punchers__oldprice">30500 Р.</p>
                   <span class="punchers__newprice">25500 Р.</span>
                   <div class="list__hover">
-                    <a class="punchers__button button__buy" href="#">купить</a>
+                    <button class="punchers__button button__buy">купить</button>
                     <a class="punchers__button button__bookmarks" href="#"
                       >в закладки</a
                     >
@@ -322,7 +322,7 @@
                   <p class="punchers__oldprice">30500 Р.</p>
                   <span class="punchers__newprice">25500 Р.</span>
                   <div class="list__hover">
-                    <a class="punchers__button button__buy" href="#">купить</a>
+                    <button class="punchers__button button__buy">купить</button>
                     <a class="punchers__button button__bookmarks" href="#"
                       >в закладки</a
                     >
@@ -338,7 +338,7 @@
                   <p class="punchers__oldprice">30500 Р.</p>
                   <span class="punchers__newprice">25500 Р.</span>
                   <div class="list__hover">
-                    <a class="punchers__button button__buy" href="#">купить</a>
+                    <button class="punchers__button button__buy">купить</button>
                     <a class="punchers__button button__bookmarks" href="#"
                       >в закладки</a
                     >
@@ -354,7 +354,7 @@
                   <p class="punchers__oldprice">22500 Р.</p>
                   <span class="punchers__newprice">15500 Р.</span>
                   <div class="list__hover">
-                    <a class="punchers__button button__buy" href="#">купить</a>
+                    <button class="punchers__button button__buy">купить</button>
                     <a class="punchers__button button__bookmarks" href="#"
                       >в закладки</a
                     >
@@ -370,7 +370,7 @@
                   <p class="punchers__oldprice">30500 Р.</p>
                   <span class="punchers__newprice">25500 Р.</span>
                   <div class="list__hover">
-                    <a class="punchers__button button__buy" href="#">купить</a>
+                    <button class="punchers__button button__buy">купить</button>
                     <a class="punchers__button button__bookmarks" href="#"
                       >в закладки</a
                     >
@@ -389,7 +389,7 @@
                     >12500 Р.</span
                   >
                   <div class="list__hover">
-                    <a class="punchers__button button__buy" href="#">купить</a>
+                    <button class="punchers__button button__buy">купить</button>
                     <a class="punchers__button button__bookmarks" href="#"
                       >в закладки</a
                     >
@@ -405,7 +405,7 @@
                   <p class="punchers__oldprice">22500 Р.</p>
                   <span class="punchers__newprice">15500 Р.</span>
                   <div class="list__hover">
-                    <a class="punchers__button button__buy" href="#">купить</a>
+                    <button class="punchers__button button__buy">купить</button>
                     <a class="punchers__button button__bookmarks" href="#"
                       >в закладки</a
                     >
@@ -421,7 +421,7 @@
                   <p class="punchers__oldprice">30500 Р.</p>
                   <span class="punchers__newprice">25500 Р.</span>
                   <div class="list__hover">
-                    <a class="punchers__button button__buy" href="#">купить</a>
+                    <button class="punchers__button button__buy">купить</button>
                     <a class="punchers__button button__bookmarks" href="#"
                       >в закладки</a
                     >
@@ -438,7 +438,7 @@
                   />
                   <span class="punchers__newprice">12500 Р.</span>
                   <div class="list__hover">
-                    <a class="punchers__button button__buy" href="#">купить</a>
+                    <button class="punchers__button button__buy">купить</button>
                     <a class="punchers__button button__bookmarks" href="#"
                       >в закладки</a
                     >
@@ -464,6 +464,42 @@
             </section>
           </section>
         </div>
+        <section class="popup__buy">
+          <div class="popupbuy__container">
+            <div class="top__line map__line"></div>
+            <button
+              class="popup__close map__close"
+              type="button"
+              aria-label="кнопка закрыть"
+            >
+              <img
+                src="./source/index/icon-close.svg"
+                alt="кнопка закрытия формы"
+                width="21"
+                height="21"
+              />
+            </button>
+            <div class="popupcontainer__title">
+              <h2 class="popupbuy__title">Товар добавлен в корзину!</h2>
+            </div>
+            <div class="popupbuy__containerbutton">
+              <button
+                class="popupbuy__button button__order"
+                type="button"
+                aria-label="button place an order"
+              >
+                ОФОРМИТЬ ЗАКАЗ
+              </button>
+              <button
+                class="popupbuy__button button__continue"
+                type="button"
+                aria-label="button place an order"
+              >
+                ПРОДОЛЖИТЬ ПОКУПКИ
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
       <section class="anyworld">
         <div class="wraper">
@@ -576,5 +612,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/popup-buy.js"></script>
   </body>
 </html>
