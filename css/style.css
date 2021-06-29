@@ -1697,6 +1697,7 @@
 }
 
 .punchers__list {
+  position: relative;
   background: var(--basic-white);
   border: 1px solid #eaeaea;
   box-sizing: border-box;
@@ -1707,6 +1708,53 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.list__hover {
+  width: 135px;
+  height: 100px;
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 41px;
+  background-color: var(--basic-white);
+}
+
+.punchers__list:hover .list__hover {
+  display: block;
+}
+
+.punchers__list:hover .punchers__img {
+  opacity: 0;
+}
+
+.button__buy:hover {
+  transition: 0.7s;
+  background: #5fbb2d;
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+}
+
+.button__buy:active {
+  transition: 0.7s;
+  background: #518534;
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+}
+
+.button__bookmarks:hover {
+  transition: 0.7s;
+  border: 3px solid #32425c;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.button__bookmarks:active {
+  transition: 0.7s;
+  border: 3px solid #32425c;
+  box-sizing: border-box;
+  border-radius: 2px;
+  opacity: 0.5;
 }
 
 .punchers__list:nth-child(3),
