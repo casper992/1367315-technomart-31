@@ -1,8 +1,12 @@
-const buttonBuy = document.querySelector(".button__buy");
+const buttonBuy = document.querySelectorAll(".button__buy");
 const popupBuy = document.querySelector(".popup__buy");
 const buttonClosePopupBuy = popupBuy.querySelector(".map__close");
 
 buttonBuy.addEventListener("click", function (event) {
+  for (let showButtons of buttonBuy) {
+    console.log("кнопка нашлась");
+  }
+
   event.preventDefault();
   popupBuy.classList.add("popup__visible");
 });

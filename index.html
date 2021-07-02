@@ -129,33 +129,44 @@
               <a class="catalog__button" href="#">для стройки</a>
             </li>
             <li class="catalog__list list4">
-              <div class="catalog__slide1">
+              <div class="catalog__slide catalog__slide1">
                 <h3 class="catalogslide__title">перфараторы</h3>
-                <p class="catalog__text">настоящие мужские игрушки</p>
+                <p class="catalog__text">Настоящие мужские игрушки</p>
               </div>
-              <div class="catalog__slide2">
+              <div class="catalog__slide catalog__slide2">
                 <h3 class="catalogslide__title">дрели</h3>
-                <p class="catalog__text">соседям на радость</p>
+                <p class="catalog__text">Соседям на радость</p>
               </div>
-              <a href="#">
+              <button
+                class="catalogslide__button button__previous"
+                type="button"
+              >
                 <img
                   src="./source/index/icon-left.svg"
                   alt="картинка скопки стрелки в лево"
                   width="22"
                   height="40"
                 />
-              </a>
-              <a href="#">
+              </button>
+              <button class="catalogslide__button button__next" type="button">
                 <img
                   src="./source/index/icon-right.svg"
                   alt="картинка скопки стрелки в право"
                   width="22"
                   height="40"
                 />
-              </a>
+              </button>
               <a class="catalog__link red__button" href="./catalog.html"
-                >открыть каталог</a
-              >
+                >открыть каталог
+              </a>
+              <button
+                class="catalogslide__carousel carousel1"
+                type="button"
+              ></button>
+              <button
+                class="catalogslide__carousel carousel2"
+                type="button"
+              ></button>
             </li>
             <li class="catalog__list list5">
               <h3 class="catalog__title">скидки 50%</h3>
@@ -324,13 +335,13 @@
           <section class="container__service">
             <ul class="slide__link">
               <li class="slide__link-list">
-                <a class="slide__a a1" href="#">доставка</a>
+                <button class="slide__a a1" type="button">доставка</button>
               </li>
               <li class="slide__link-list">
-                <a class="slide__a a2" href="#">гарантия</a>
+                <button class="slide__a a2" type="button">гарантия</button>
               </li>
               <li class="slide__link-list">
-                <a class="slide__a a3" href="#">кредит</a>
+                <button class="slide__a a3" type="button">кредит</button>
               </li>
             </ul>
             <section class="slide">
@@ -603,5 +614,7 @@
 
     <script src="/js/popup-feedback.js"></script>
     <script src="/js/popup-map.js"></script>
+    <script src="/js/slider-service.js"></script>
+    <script src="/js/catalog-slider.js"></script>
   </body>
 </html>
