@@ -2,14 +2,14 @@ const buttonBuy = document.querySelectorAll(".button__buy");
 const popupBuy = document.querySelector(".popup__buy");
 const buttonClosePopupBuy = popupBuy.querySelector(".map__close");
 
-buttonBuy.addEventListener("click", function (event) {
-  for (let showButtons of buttonBuy) {
-    console.log("кнопка нашлась");
-  }
-
-  event.preventDefault();
-  popupBuy.classList.add("popup__visible");
-});
+for (let showButtons = 0; showButtons < buttonBuy.length; showButtons++) {
+  buttonBuy[showButtons].addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log("всё работает");
+    buttonBuy[showButtons].classList.add("popup__visible");
+    popupBuy.classList.add("popup__visible");
+  });
+}
 
 buttonClosePopupBuy.addEventListener("click", function (event) {
   event.preventDefault();

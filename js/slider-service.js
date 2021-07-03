@@ -10,6 +10,7 @@ buttonFirst.addEventListener("click", function (event) {
   listSecond.classList.remove("slide__list-visible");
   listThird.classList.remove("slide__list-visible");
   listFirst.classList.toggle("slide__list-visible");
+  buttonFirst.focus();
 });
 
 buttonSecond.addEventListener("click", function (event) {
@@ -17,6 +18,8 @@ buttonSecond.addEventListener("click", function (event) {
   listFirst.classList.remove("slide__list-visible");
   listThird.classList.remove("slide__list-visible");
   listSecond.classList.toggle("slide__list-visible");
+  buttonFirst.classList.remove("a1__focus");
+  listFirst.classList.remove("list__first");
 });
 
 buttonThird.addEventListener("click", function (event) {
@@ -24,4 +27,6 @@ buttonThird.addEventListener("click", function (event) {
   listFirst.classList.remove("slide__list-visible");
   listSecond.classList.remove("slide__list-visible");
   listThird.classList.toggle("slide__list-visible");
+  buttonFirst.classList.remove("a1__focus");
+  listFirst.classList.remove("list__first");
 });
