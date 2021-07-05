@@ -202,13 +202,6 @@
   color: var(--basic-white);
 }
 
-/*.top__link1 {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  margin-left: 10px;
-}*/
-
 .top__link2 {
   width: 150px;
   height: 24px;
@@ -397,11 +390,13 @@
 }
 
 .button__login:hover::before {
+  transition: 0.7s;
   background: var(--basic-white) url(/source/header/hover/icon-login-hover.svg)
     no-repeat 0 0;
 }
 
 .button__login:hover {
+  transition: 0.7s;
   color: var(--basic-red);
 }
 
@@ -465,6 +460,7 @@
 }
 
 .nav__link:hover {
+  transition: 0.5s;
   background: var(--basic-dark);
   box-shadow: inset 0px -5px 0px var(--basic-dark);
 }
@@ -642,6 +638,7 @@
 }
 
 .catalog__button:hover {
+  transition: 0.5s;
   background-color: rgba(197, 197, 197, 0.3);
 }
 
@@ -833,6 +830,7 @@
 }
 
 .manufacturer__link:hover {
+  transition: 0.5s;
   background: var(--basic-white);
   border: 1px solid #eaeaea;
   box-sizing: border-box;
@@ -869,9 +867,18 @@
 }
 
 .slide__link {
+  position: relative;
   width: 240px;
+  height: 300px;
   margin-right: 80px;
   margin-bottom: 99px;
+}
+
+.slide__gradient {
+  position: absolute;
+  top: -40px;
+  left: 230px;
+  background-image: url(/source/index/icon-gradient.svg);
 }
 
 .slide__link-list {
@@ -883,7 +890,7 @@
 .slide__link-list:first-child {
   background-color: var(--basic-white);
   border: none;
-  box-shadow: 0px 1px 0px #ffffff;
+  box-shadow: 0px 1px 0px var(--basic-white);
 }
 
 .slide__a {
@@ -1281,11 +1288,12 @@
 }
 
 .feedback__gold:hover {
+  transition: 0.3s;
   text-decoration: underline;
 }
 
 .feedback__gold:active {
-  transition: 0.6s;
+  transition: 0.3s;
   color: var(--basic-red);
 }
 
@@ -1315,6 +1323,7 @@
 }
 
 .user__login:hover::before {
+  transition: 0.5s;
   background: var(--basic-white) url(/source/catalog/hover/icon-user-hover.svg)
     no-repeat 0 0;
 }
@@ -1357,6 +1366,7 @@
 }
 
 .user__login:hover::after {
+  transition: 0.5s;
   background: var(--basic-white)
     url(/source/catalog/hover/icon-logout-hover.svg) no-repeat 0 0;
 }
@@ -1398,6 +1408,7 @@
 }
 
 .user__link:hover {
+  transition: 0.5s;
   color: var(--basic-red);
 }
 
@@ -1755,6 +1766,7 @@
 }
 
 .sort__link:hover {
+  transition: 0.5s;
   color: var(--basic-black);
   border-bottom: 1px solid var(--basic-red);
   background-color: transparent;
