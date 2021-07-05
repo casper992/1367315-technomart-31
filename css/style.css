@@ -317,6 +317,7 @@
 }
 
 .company__tel {
+  width: 270px;
   position: relative;
   display: flex;
   align-items: center;
@@ -348,6 +349,9 @@
 }
 
 .company__address {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
@@ -1352,7 +1356,7 @@
   justify-content: center;
   align-items: center;
   color: var(--basic-black);
-  margin-bottom: 19px;
+  margin-bottom: 7px;
 }
 
 .user__login::after {
