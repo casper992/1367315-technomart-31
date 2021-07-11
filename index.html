@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.min.css" type="text/css" />
     <title>Техномарт</title>
   </head>
 
@@ -28,7 +29,7 @@
       <section class="header__top">
         <div class="wraper__top wraper">
           <section class="logo">
-            <a class="logo__link" href="./index.html">
+            <a class="logo__link" href="./index.html" aria-label="Логотип">
               <img
                 src="./img/header/logo.svg"
                 class="logo__image"
@@ -50,13 +51,19 @@
               />
             </li>
             <li class="top__list">
-              <a class="top__link top__link2" href="#"> Закладки: 0 </a>
+              <a class="top__link top__link2" href="#" aria-label="закладки">
+                Закладки: 0
+              </a>
             </li>
             <li class="top__list">
-              <a class="top__link top__link3" href="#"> корзина: 0 </a>
+              <a class="top__link top__link3" href="#" aria-label="корзина">
+                корзина: 0
+              </a>
             </li>
           </ul>
-          <a class="top__button" href="#">оформить заказ</a>
+          <a class="top__button" href="#" aria-label="оформить заказ"
+            >оформить заказ</a
+          >
         </div>
       </section>
       <div class="wraper">
@@ -69,40 +76,75 @@
           </section>
           <section class="company">
             <p class="company__tel">
-              <a class="tel__link" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a
+                class="tel__link"
+                href="tel:+78005558628"
+                aria-label="телефон компании"
+                >+7 800 555-86-28</a
+              >
             </p>
-            <address class="company__address">
+            <address class="company__address" aria-label="адресс компании">
               г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
             </address>
           </section>
           <section class="company__buttons">
-            <a class="button__login button" href="#">войти</a>
-            <a class="button__exit button" href="#">регистрация</a>
+            <a class="button__login button" href="#" aria-label="кнопка входа"
+              >войти</a
+            >
+            <a
+              class="button__exit button"
+              href="#"
+              aria-label="кнопка регистрации"
+              >регистрация</a
+            >
           </section>
         </div>
         <section class="navigation">
           <nav class="navigation__nav">
             <ul class="nav__item">
               <li class="nav__list">
-                <a class="nav__link" href="./index.html">главная</a>
+                <a
+                  class="nav__link"
+                  href="./index.html"
+                  aria-label="ссылка главной страницы"
+                  >главная</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="#">компания</a>
+                <a class="nav__link" href="#" aria-label="ссылка компании"
+                  >компания</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="./catalog.html">каталог</a>
+                <a
+                  class="nav__link"
+                  href="./catalog.html"
+                  aria-label="ссылка каталога"
+                  >каталог</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="#">новости</a>
+                <a class="nav__link" href="#" aria-label="ссылка новостей"
+                  >новости</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="#">спецпредложение</a>
+                <a
+                  class="nav__link"
+                  href="#"
+                  aria-label="ссылка спецпредложений"
+                  >спецпредложение</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="#">доставка</a>
+                <a class="nav__link" href="#" aria-label="ссылка доставки"
+                  >доставка</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="#">контакты</a>
+                <a class="nav__link" href="#" aria-label="ссылка контакты"
+                  >контакты</a
+                >
               </li>
             </ul>
           </nav>
@@ -118,15 +160,30 @@
           <ul class="catalog__item">
             <li class="catalog__list list1">
               <h3 class="catalog__title">материалы</h3>
-              <a class="catalog__button" href="#">на любой вкус</a>
+              <a
+                class="catalog__button"
+                href="#"
+                aria-label="кнопка выбора инструмента на любой вкус"
+                >на любой вкус</a
+              >
             </li>
             <li class="catalog__list list2">
               <h3 class="catalog__title">инструмент</h3>
-              <a class="catalog__button" href="#">на все случаи</a>
+              <a
+                class="catalog__button"
+                href="#"
+                aria-label="кнопка выбора инструмента на все случаи"
+                >на все случаи</a
+              >
             </li>
             <li class="catalog__list list3">
               <h3 class="catalog__title">техника</h3>
-              <a class="catalog__button" href="#">для стройки</a>
+              <a
+                class="catalog__button"
+                href="#"
+                aria-label="кнопка выбора инструмента для стройки"
+                >для стройки</a
+              >
             </li>
             <li class="catalog__list list4">
               <div class="catalog__slide catalog__slide1">
@@ -139,6 +196,7 @@
               </div>
               <button
                 class="catalogslide__button button__previous"
+                aria-label="кнопка предыдущая"
                 type="button"
               >
                 <img
@@ -148,7 +206,11 @@
                   height="40"
                 />
               </button>
-              <button class="catalogslide__button button__next" type="button">
+              <button
+                class="catalogslide__button button__next"
+                type="button"
+                aria-label="кнопка следующая"
+              >
                 <img
                   src="./img/index/icon-right.svg"
                   alt="картинка скопки стрелки в право"
@@ -156,33 +218,53 @@
                   height="40"
                 />
               </button>
-              <a class="catalog__link red__button" href="./catalog.html"
+              <a
+                class="catalog__link red__button"
+                href="./catalog.html"
+                aria-label="кнопка открыть каталог"
                 >открыть каталог
               </a>
               <button
                 class="catalogslide__carousel carousel1"
                 type="button"
+                aria-label="кнопка карусели"
               ></button>
               <button
                 class="catalogslide__carousel carousel2"
                 type="button"
+                aria-label="кнопка карусели"
               ></button>
             </li>
             <li class="catalog__list list5">
               <h3 class="catalog__title">скидки 50%</h3>
-              <a class="catalog__button" href="#">на 350 товаров</a>
+              <a
+                class="catalog__button"
+                href="#"
+                aria-label="кнопка выбора 350 товаров"
+                >на 350 товаров</a
+              >
             </li>
 
             <li class="catalog__list list6">
               <h3 class="catalog__title">доставка</h3>
-              <a class="catalog__button" href="#">бесплатно</a>
+              <a
+                class="catalog__button"
+                href="#"
+                aria-label="кнопка бесплатной доставки"
+                >бесплатно</a
+              >
             </li>
           </ul>
         </section>
         <section class="popular">
           <section class="container__title">
             <h2 class="title">популярные товары:</h2>
-            <a class="red__button" href="#">все популярные товары</a>
+            <a
+              class="red__button"
+              href="#"
+              aria-label="кнопка популярных товаров"
+              >все популярные товары</a
+            >
           </section>
           <ul class="popular__item">
             <li class="popular__list">
@@ -238,11 +320,17 @@
         <section class="manufacturer">
           <section class="container__title">
             <h2 class="manufacturer__title title">популярные производители:</h2>
-            <a class="red__button">все производители</a>
+            <a class="red__button" aria-label="красная кнопка "
+              >все производители</a
+            >
           </section>
           <ul class="manufacturer__item">
             <li class="manufacturer__list">
-              <a class="manufacturer__link" href="#">
+              <a
+                class="manufacturer__link"
+                href="#"
+                aria-label="ссылка производителя BOSCH"
+              >
                 <img
                   src="./img/index/bosch.jpg"
                   alt="картинка производителя"
@@ -252,7 +340,11 @@
               </a>
             </li>
             <li class="manufacturer__list">
-              <a class="manufacturer__link" href="#">
+              <a
+                class="manufacturer__link"
+                href="#"
+                aria-label="ссылка производителя MAKIta"
+              >
                 <img
                   src="./img/index/makita.jpg"
                   alt="картинка производителя"
@@ -262,7 +354,11 @@
               </a>
             </li>
             <li class="manufacturer__list">
-              <a class="manufacturer__link" href="#">
+              <a
+                class="manufacturer__link"
+                href="#"
+                aria-label="ссылка производителя deWALT"
+              >
                 <img
                   src="./img/index/deWALT.jpg"
                   alt="картинка производителя"
@@ -272,7 +368,11 @@
               </a>
             </li>
             <li class="manufacturer__list">
-              <a class="manufacturer__link" href="#">
+              <a
+                class="manufacturer__link"
+                href="#"
+                aria-label="ссылка производителя interscop"
+              >
                 <img
                   src="./img/index/interscop.jpg"
                   alt="картинка производителя"
@@ -282,7 +382,11 @@
               </a>
             </li>
             <li class="manufacturer__list">
-              <a class="manufacturer__link" href="#">
+              <a
+                class="manufacturer__link"
+                href="#"
+                aria-label="ссылка производителя hitachi"
+              >
                 <img
                   src="./img/index/hitachi.jpg"
                   alt="картинка производителя"
@@ -292,7 +396,11 @@
               </a>
             </li>
             <li class="manufacturer__list">
-              <a class="manufacturer__link" href="#">
+              <a
+                class="manufacturer__link"
+                href="#"
+                aria-label="ссылка производителя lg"
+              >
                 <img
                   src="./img/index/lg.jpg"
                   alt="картинка производителя"
@@ -302,7 +410,11 @@
               </a>
             </li>
             <li class="manufacturer__list">
-              <a class="manufacturer__link" href="#">
+              <a
+                class="manufacturer__link"
+                href="#"
+                aria-label="ссылка производителя aeg"
+              >
                 <img
                   src="./img/index/aeg.jpg"
                   alt="картинка производителя"
@@ -312,7 +424,11 @@
               </a>
             </li>
             <li class="manufacturer__list">
-              <a class="manufacturer__link" href="#">
+              <a
+                class="manufacturer__link"
+                href="#"
+                aria-label="ссылка производителя metabo"
+              >
                 <img
                   src="./img/index/metabo.jpg"
                   alt="картинка производителя"
@@ -345,15 +461,31 @@
                 </div>
               </li>
               <li class="slide__link-list">
-                <button class="slide__a a1 a1__focus" type="button">
+                <button
+                  class="slide__a a1 a1__focus"
+                  type="button"
+                  aria-label="кнопка доставка"
+                >
                   доставка
                 </button>
               </li>
               <li class="slide__link-list">
-                <button class="slide__a a2" type="button">гарантия</button>
+                <button
+                  class="slide__a a2"
+                  type="button"
+                  aria-label="кнопка гарантия"
+                >
+                  гарантия
+                </button>
               </li>
               <li class="slide__link-list">
-                <button class="slide__a a3" type="button">кредит</button>
+                <button
+                  class="slide__a a3"
+                  type="button"
+                  aria-label="кнопка кредит"
+                >
+                  кредит
+                </button>
               </li>
             </ul>
             <section class="slide">
@@ -382,7 +514,9 @@
                     Залезть в долговую яму стало проще! Кредитные консультанты
                     придут вам на помощь.
                   </p>
-                  <a class="red__button" href="#">отправить заявку</a>
+                  <a class="red__button" href="#" aria-label="красная кнопка"
+                    >отправить заявку</a
+                  >
                 </li>
               </ul>
             </section>
@@ -436,7 +570,12 @@
               ЖелДорЭкспедиция
             </li>
           </ul>
-          <a class="info__button red__button" href="#">Подробнее о компании</a>
+          <a
+            class="info__button red__button"
+            href="#"
+            aria-label="красная кнопка"
+            >Подробнее о компании</a
+          >
         </section>
         <section class="contacts">
           <h3 class="contacts__title title">контакты</h3>
@@ -444,7 +583,7 @@
             Вы можете забрать товар сами, <br />
             заехав в наш офис:
           </p>
-          <button class="button__map" type="button">
+          <button class="button__map" type="button" aria-label="кнопка карты">
             <img
               src="./img/index/map.jpg"
               alt="карта"
@@ -452,7 +591,11 @@
               height="158"
             />
           </button>
-          <button class="contacts__button red__button" type="button">
+          <button
+            class="contacts__button red__button"
+            type="button"
+            aria-label="кнопка нанпишите нам"
+          >
             Заблудились? НапиШИТЕ НАМ!
           </button>
         </section>
@@ -505,7 +648,13 @@
                 </textarea>
               </label>
               <div class="container__button">
-                <button class="popup__button" type="submit">отправить</button>
+                <button
+                  class="popup__button"
+                  type="submit"
+                  aria-label="кнопка отправить форму"
+                >
+                  отправить
+                </button>
               </div>
             </form>
           </div>
@@ -544,7 +693,11 @@
         <div class="wraper">
           <div class="top__flex">
             <section class="logo">
-              <a class="logo__link logo__footer" href="./index.html">
+              <a
+                class="logo__link logo__footer"
+                href="./index.html"
+                aria-label="логотип"
+              >
                 <img
                   src="./img/header/logo.svg"
                   class="logo__title"
@@ -556,19 +709,32 @@
             </section>
             <ul class="footer__item">
               <li class="footer__list">
-                <a class="item__white" href="#">компания</a>
+                <a class="item__white" href="#" aria-label="ссылка компании"
+                  >компания</a
+                >
               </li>
               <li class="footer__list">
-                <a class="item__white" href="#">новости</a>
+                <a class="item__white" href="#" aria-label="ссылка новостей"
+                  >новости</a
+                >
               </li>
               <li class="footer__list">
-                <a class="item__white" href="./catalog.html">каталог</a>
+                <a
+                  class="item__white"
+                  href="./catalog.html"
+                  aria-label="ссылка каталога"
+                  >каталог</a
+                >
               </li>
               <li class="footer__list">
-                <a class="item__white" href="#">доставка</a>
+                <a class="item__white" href="#" aria-label="ссылка доставки"
+                  >доставка</a
+                >
               </li>
               <li class="footer__list">
-                <a class="item__white" href="#">контакты</a>
+                <a class="item__white" href="#" aria-label="ссылка контакты"
+                  >контакты</a
+                >
               </li>
             </ul>
           </div>
@@ -578,25 +744,39 @@
         <div class="wraper">
           <div class="center__flex">
             <section class="adres">
-              <address class="footer__adress">
+              <address class="footer__adress" aria-label="адресс магазина">
                 г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
               </address>
-              <a class="footer__tel" href="tel:+78005558628"
+              <a
+                class="footer__tel"
+                href="tel:+78005558628"
+                aria-label="ссылка на телефон магазина"
                 >+7 800 555-86-28</a
               >
             </section>
             <ul class="footer__itemgold">
               <li class="footer__listgold">
-                <a class="item__gold" href="#">материалы</a>
+                <a class="item__gold" href="#" aria-label="ссылка материалов"
+                  >материалы</a
+                >
               </li>
               <li class="footer__listgold">
-                <a class="item__gold" href="#">техника</a>
+                <a class="item__gold" href="#" aria-label="ссылка техника"
+                  >техника</a
+                >
               </li>
               <li class="footer__listgold">
-                <a class="item__gold" href="#">инструмент</a>
+                <a class="item__gold" href="#" aria-label="ссылка инструменты"
+                  >инструмент</a
+                >
               </li>
               <li class="footer__listgold">
-                <a class="item__gold" href="#">спецпредложения</a>
+                <a
+                  class="item__gold"
+                  href="#"
+                  aria-label="ссылка спецпредложения"
+                  >спецпредложения</a
+                >
               </li>
             </ul>
           </div>
@@ -614,13 +794,25 @@
             <section class="socials">
               <ul class="socials__item">
                 <li class="socials__list">
-                  <a class="socials__link socials__link1" href="#"></a>
+                  <a
+                    class="socials__link socials__link1"
+                    href="#"
+                    aria-label="ссылка на вконтакте"
+                  ></a>
                 </li>
                 <li class="socials__list">
-                  <a class="socials__link socials__link2" href="#"></a>
+                  <a
+                    class="socials__link socials__link2"
+                    href="#"
+                    aria-label="ссылка на фейсбук"
+                  ></a>
                 </li>
                 <li class="socials__list">
-                  <a class="socials__link socials__link3" href="#"></a>
+                  <a
+                    class="socials__link socials__link3"
+                    href="#"
+                    aria-label="ссылка на инстаграмм"
+                  ></a>
                 </li>
               </ul>
             </section>
@@ -629,6 +821,7 @@
               <a
                 class="feedback__text feedback__gold"
                 href="mailto:mail@htmlacademy.ru"
+                aria-label="ссылка на электоронную почту"
                 >mail@htmlacademy.ru</a
               >
             </section>
@@ -637,6 +830,7 @@
               <a
                 class="developed__link feedback__gold"
                 href="https://up.htmlacademy.ru/htmlcss/31"
+                aria-label="ссылка на разработчика"
                 >htmlacademy.ru</a
               >
             </section>
@@ -646,8 +840,12 @@
     </footer>
 
     <script src="/js/popup-feedback.js"></script>
+    <script src="/js/popup-feedback.min.js"></script>
     <script src="/js/popup-map.js"></script>
+    <script src="/js/popup-map.min.js"></script>
     <script src="/js/slider-service.js"></script>
+    <script src="/js/slider-service.min.js"></script>
     <script src="/js/catalog-slider.js"></script>
+    <script src="/js/catalog-slider.min.js"></script>
   </body>
 </html>

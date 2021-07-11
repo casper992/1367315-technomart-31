@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.min.css" type="text/css" />
     <title>Техномарт</title>
   </head>
   <body class="body">
@@ -27,7 +28,7 @@
       <section class="header__top">
         <div class="wraper__top wraper">
           <section class="logo">
-            <a class="logo__link" href="./index.html">
+            <a class="logo__link" href="./index.html" aria-label="Логотип">
               <img
                 src="./img/header/logo.svg"
                 class="logo__image"
@@ -49,13 +50,19 @@
               />
             </li>
             <li class="top__list top__list2">
-              <a class="top__link top__link2" href="#"> Закладки: 0 </a>
+              <a class="top__link top__link2" href="#" aria-label="закладки">
+                Закладки: 0
+              </a>
             </li>
             <li class="top__list top__list3">
-              <a class="top__link top__link3" href="#"> корзина: 10 </a>
+              <a class="top__link top__link3" href="#" aria-label="корзина">
+                корзина: 10
+              </a>
             </li>
           </ul>
-          <a class="top__button" href="#">оформить заказ</a>
+          <a class="top__button" href="#" aria-label="оформить заказ"
+            >оформить заказ</a
+          >
         </div>
       </section>
       <div class="wraper">
@@ -68,21 +75,38 @@
           </section>
           <section class="company">
             <p class="company__tel">
-              <a class="tel__link" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a
+                class="tel__link"
+                href="tel:+78005558628"
+                aria-label="телефон компании"
+                >+7 800 555-86-28</a
+              >
             </p>
-            <address class="company__address">
+            <address class="company__address" aria-label="адресс компании">
               г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
             </address>
           </section>
           <section class="user__button">
-            <a class="user__login" href="#">Равшан Джамшутович</a>
+            <a class="user__login" href="#" aria-label="кнопка входа"
+              >Равшан Джамшутович</a
+            >
             <ul class="user__item">
               <li class="user__list">
-                <a class="user__link link__first" href="#">Мои заказы</a>
+                <a
+                  class="user__link link__first"
+                  href="#"
+                  aria-label="мои заказы"
+                  >Мои заказы</a
+                >
               </li>
               <li class="user__list list__dotted"></li>
               <li class="user__list">
-                <a class="user__link link__second" href="#">Личный кабинет</a>
+                <a
+                  class="user__link link__second"
+                  href="#"
+                  aria-label="личный кабинет"
+                  >Личный кабинет</a
+                >
               </li>
             </ul>
           </section>
@@ -91,25 +115,48 @@
           <nav class="navigation__nav">
             <ul class="nav__item">
               <li class="nav__list">
-                <a class="nav__link" href="./index.html">главная</a>
+                <a
+                  class="nav__link"
+                  href="./index.html"
+                  aria-label="ссылка главной страницы"
+                  >главная</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="#">компания</a>
+                <a class="nav__link" href="#" aria-label="ссылка компании"
+                  >компания</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="./catalog.html">каталог</a>
+                <a
+                  class="nav__link"
+                  href="./catalog.html"
+                  aria-label="ссылка каталога"
+                  >каталог</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="#">новости</a>
+                <a class="nav__link" href="#" aria-label="ссылка новостей"
+                  >новости</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="#">спецпредложение</a>
+                <a
+                  class="nav__link"
+                  href="#"
+                  aria-label="ссылка спецпредложений"
+                  >спецпредложение</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="#">доставка</a>
+                <a class="nav__link" href="#" aria-label="ссылка доставки"
+                  >доставка</a
+                >
               </li>
               <li class="nav__list">
-                <a class="nav__link" href="#">контакты</a>
+                <a class="nav__link" href="#" aria-label="ссылка контакты"
+                  >контакты</a
+                >
               </li>
             </ul>
           </nav>
@@ -185,23 +232,27 @@
                   </div>
                   <div class="range__price">
                     <div class="price__min">
-                      <input
-                        class="min__input"
-                        type="text"
-                        name="minprice"
-                        id="price__min"
-                        value="0"
-                      />
+                      <label for="price__min">
+                        <input
+                          class="min__input"
+                          type="text"
+                          name="minprice"
+                          id="price__min"
+                          value="0"
+                        />
+                      </label>
                     </div>
                     <div class="span__range"></div>
                     <div class="price__max">
-                      <input
-                        class="max__input"
-                        type="text"
-                        name="maxprice"
-                        id="price__max"
-                        value="30000"
-                      />
+                      <label for="price__max">
+                        <input
+                          class="max__input"
+                          type="text"
+                          name="maxprice"
+                          id="price__max"
+                          value="30000"
+                        />
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -276,7 +327,13 @@
                   >Сетевые</label
                 >
               </fieldset>
-              <button class="filterform__button" type="submit">показать</button>
+              <button
+                class="filterform__button"
+                type="submit"
+                aria-label="кнопка показать результат фильтра"
+              >
+                показать
+              </button>
             </form>
           </section>
           <section class="container__mainsort">
@@ -284,21 +341,45 @@
               <h3 class="sort__title">сортировка:</h3>
               <ul class="sort__item">
                 <li class="sort__list">
-                  <a class="sort__link sort__link1" href="#"> по цене </a>
+                  <a
+                    class="sort__link sort__link1"
+                    href="#"
+                    aria-label="сортировка по цене"
+                  >
+                    по цене
+                  </a>
                 </li>
                 <li class="sort__list">
-                  <a class="sort__link sort__link2" href="#"> по типу </a>
+                  <a
+                    class="sort__link sort__link2"
+                    href="#"
+                    aria-label="сортировка по типу"
+                  >
+                    по типу
+                  </a>
                 </li>
                 <li class="sort__list">
-                  <a class="sort__link sort__link3" href="#">
+                  <a
+                    class="sort__link sort__link3"
+                    href="#"
+                    aria-label="сортировка по функционалу"
+                  >
                     по функуионалу
                   </a>
                 </li>
                 <li class="sort__list">
-                  <a class="sort__up" href="#"></a>
+                  <a
+                    class="sort__up"
+                    href="#"
+                    aria-label="сортировка по возрастанию"
+                  ></a>
                 </li>
                 <li class="sort__list">
-                  <a class="sort__down" href="#"></a>
+                  <a
+                    class="sort__down"
+                    href="#"
+                    aria-label="сортировка по убыванию"
+                  ></a>
                 </li>
               </ul>
             </section>
@@ -316,10 +397,17 @@
                   <p class="punchers__oldprice">30500 Р.</p>
                   <span class="punchers__newprice">25500 Р.</span>
                   <div class="list__hover">
-                    <button class="punchers__button button__buy" type="button">
+                    <button
+                      class="punchers__button button__buy"
+                      type="button"
+                      aria-label="кнопка купить"
+                    >
                       купить
                     </button>
-                    <a class="punchers__button button__bookmarks" href="#"
+                    <a
+                      class="punchers__button button__bookmarks"
+                      href="#"
+                      aria-label="кнопка в закладки"
                       >в закладки</a
                     >
                   </div>
@@ -336,10 +424,17 @@
                   <p class="punchers__oldprice">30500 Р.</p>
                   <span class="punchers__newprice">25500 Р.</span>
                   <div class="list__hover">
-                    <button class="punchers__button button__buy" type="button">
+                    <button
+                      class="punchers__button button__buy"
+                      type="button"
+                      aria-label="кнопка купить"
+                    >
                       купить
                     </button>
-                    <a class="punchers__button button__bookmarks" href="#"
+                    <a
+                      class="punchers__button button__bookmarks"
+                      href="#"
+                      aria-label="кнопка в закладки"
                       >в закладки</a
                     >
                   </div>
@@ -356,8 +451,16 @@
                   <p class="punchers__oldprice">30500 Р.</p>
                   <span class="punchers__newprice">25500 Р.</span>
                   <div class="list__hover">
-                    <button class="punchers__button button__buy">купить</button>
-                    <a class="punchers__button button__bookmarks" href="#"
+                    <button
+                      class="punchers__button button__buy"
+                      aria-label="кнопка купить"
+                    >
+                      купить
+                    </button>
+                    <a
+                      class="punchers__button button__bookmarks"
+                      href="#"
+                      aria-label="кнопка в закладки"
                       >в закладки</a
                     >
                   </div>
@@ -374,8 +477,16 @@
                   <p class="punchers__oldprice">22500 Р.</p>
                   <span class="punchers__newprice">15500 Р.</span>
                   <div class="list__hover">
-                    <button class="punchers__button button__buy">купить</button>
-                    <a class="punchers__button button__bookmarks" href="#"
+                    <button
+                      class="punchers__button button__buy"
+                      aria-label="кнопка купить"
+                    >
+                      купить
+                    </button>
+                    <a
+                      class="punchers__button button__bookmarks"
+                      href="#"
+                      aria-label="кнопка в закладки"
                       >в закладки</a
                     >
                   </div>
@@ -392,8 +503,16 @@
                   <p class="punchers__oldprice">30500 Р.</p>
                   <span class="punchers__newprice">25500 Р.</span>
                   <div class="list__hover">
-                    <button class="punchers__button button__buy">купить</button>
-                    <a class="punchers__button button__bookmarks" href="#"
+                    <button
+                      class="punchers__button button__buy"
+                      aria-label="кнопка купить"
+                    >
+                      купить
+                    </button>
+                    <a
+                      class="punchers__button button__bookmarks"
+                      href="#"
+                      aria-label="кнопка в закладки"
                       >в закладки</a
                     >
                   </div>
@@ -413,8 +532,16 @@
                     >12500 Р.</span
                   >
                   <div class="list__hover">
-                    <button class="punchers__button button__buy">купить</button>
-                    <a class="punchers__button button__bookmarks" href="#"
+                    <button
+                      class="punchers__button button__buy"
+                      aria-label="кнопка купить"
+                    >
+                      купить
+                    </button>
+                    <a
+                      class="punchers__button button__bookmarks"
+                      href="#"
+                      aria-label="кнопка в закладки"
                       >в закладки</a
                     >
                   </div>
@@ -431,8 +558,16 @@
                   <p class="punchers__oldprice">22500 Р.</p>
                   <span class="punchers__newprice">15500 Р.</span>
                   <div class="list__hover">
-                    <button class="punchers__button button__buy">купить</button>
-                    <a class="punchers__button button__bookmarks" href="#"
+                    <button
+                      class="punchers__button button__buy"
+                      aria-label="кнопка купить"
+                    >
+                      купить
+                    </button>
+                    <a
+                      class="punchers__button button__bookmarks"
+                      href="#"
+                      aria-label="кнопка в закладки"
                       >в закладки</a
                     >
                   </div>
@@ -449,8 +584,16 @@
                   <p class="punchers__oldprice">30500 Р.</p>
                   <span class="punchers__newprice">25500 Р.</span>
                   <div class="list__hover">
-                    <button class="punchers__button button__buy">купить</button>
-                    <a class="punchers__button button__bookmarks" href="#"
+                    <button
+                      class="punchers__button button__buy"
+                      aria-label="кнопка купить"
+                    >
+                      купить
+                    </button>
+                    <a
+                      class="punchers__button button__bookmarks"
+                      href="#"
+                      aria-label="кнопка в закладки"
                       >в закладки</a
                     >
                   </div>
@@ -468,8 +611,16 @@
                   />
                   <span class="punchers__newprice">12500 Р.</span>
                   <div class="list__hover">
-                    <button class="punchers__button button__buy">купить</button>
-                    <a class="punchers__button button__bookmarks" href="#"
+                    <button
+                      class="punchers__button button__buy"
+                      aria-label="кнопка купить"
+                    >
+                      купить
+                    </button>
+                    <a
+                      class="punchers__button button__bookmarks"
+                      href="#"
+                      aria-label="кнопка в закладки"
                       >в закладки</a
                     >
                   </div>
@@ -479,16 +630,36 @@
             <section class="pages">
               <ul class="pages__item">
                 <li class="pages__list">
-                  <a class="pages__link" href="#">1</a>
+                  <a
+                    class="pages__link"
+                    href="#"
+                    aria-label="кнопка первой страницы"
+                    >1</a
+                  >
                 </li>
                 <li class="pages__list">
-                  <a class="pages__link" href="#">2</a>
+                  <a
+                    class="pages__link"
+                    href="#"
+                    aria-label="кнопка второй страницы"
+                    >2</a
+                  >
                 </li>
                 <li class="pages__list">
-                  <a class="pages__link" href="#">3</a>
+                  <a
+                    class="pages__link"
+                    href="#"
+                    aria-label="кнопка третьей страницы"
+                    >3</a
+                  >
                 </li>
                 <li class="pages__list">
-                  <a class="pages__link" href="#">следующая</a>
+                  <a
+                    class="pages__link"
+                    href="#"
+                    aria-label="кнопка следующей страницы"
+                    >следующая</a
+                  >
                 </li>
               </ul>
             </section>
@@ -552,7 +723,11 @@
         <div class="wraper">
           <div class="top__flex">
             <section class="logo">
-              <a class="logo__link logo__footer" href="./index.html">
+              <a
+                class="logo__link logo__footer"
+                href="./index.html"
+                aria-label="логотип"
+              >
                 <img
                   src="./img/header/logo.svg"
                   class="logo__title"
@@ -564,19 +739,32 @@
             </section>
             <ul class="footer__item">
               <li class="footer__list">
-                <a class="item__white" href="#">компания</a>
+                <a class="item__white" href="#" aria-label="ссылка компании"
+                  >компания</a
+                >
               </li>
               <li class="footer__list">
-                <a class="item__white" href="#">новости</a>
+                <a class="item__white" href="#" aria-label="ссылка новостей"
+                  >новости</a
+                >
               </li>
               <li class="footer__list">
-                <a class="item__white" href="./catalog.html">каталог</a>
+                <a
+                  class="item__white"
+                  href="./catalog.html"
+                  aria-label="ссылка каталога"
+                  >каталог</a
+                >
               </li>
               <li class="footer__list">
-                <a class="item__white" href="#">доставка</a>
+                <a class="item__white" href="#" aria-label="ссылка доставки"
+                  >доставка</a
+                >
               </li>
               <li class="footer__list">
-                <a class="item__white" href="#">контакты</a>
+                <a class="item__white" href="#" aria-label="ссылка контакты"
+                  >контакты</a
+                >
               </li>
             </ul>
           </div>
@@ -586,25 +774,39 @@
         <div class="wraper">
           <div class="center__flex">
             <section class="adres">
-              <address class="footer__adress">
+              <address class="footer__adress" aria-label="адресс магазина">
                 г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
               </address>
-              <a class="footer__tel" href="tel:+78005558628"
+              <a
+                class="footer__tel"
+                href="tel:+78005558628"
+                aria-label="ссылка на телефон компании"
                 >+7 800 555-86-28</a
               >
             </section>
             <ul class="footer__itemgold">
               <li class="footer__listgold">
-                <a class="item__gold" href="#">материалы</a>
+                <a class="item__gold" href="#" aria-label="ссылка материалов"
+                  >материалы</a
+                >
               </li>
               <li class="footer__listgold">
-                <a class="item__gold" href="#">техника</a>
+                <a class="item__gold" href="#" aria-label="ссылка техника"
+                  >техника</a
+                >
               </li>
               <li class="footer__listgold">
-                <a class="item__gold" href="#">инструмент</a>
+                <a class="item__gold" href="#" aria-label="ссылка инструменты"
+                  >инструмент</a
+                >
               </li>
               <li class="footer__listgold">
-                <a class="item__gold" href="#">спецпредложения</a>
+                <a
+                  class="item__gold"
+                  href="#"
+                  aria-label="ссылка спецпредложения"
+                  >спецпредложения</a
+                >
               </li>
             </ul>
           </div>
@@ -622,13 +824,25 @@
             <section class="socials">
               <ul class="socials__item">
                 <li class="socials__list">
-                  <a class="socials__link socials__link1" href="#"></a>
+                  <a
+                    class="socials__link socials__link1"
+                    href="#"
+                    aria-label="ссылка на вконтакте"
+                  ></a>
                 </li>
                 <li class="socials__list">
-                  <a class="socials__link socials__link2" href="#"></a>
+                  <a
+                    class="socials__link socials__link2"
+                    href="#"
+                    aria-label="ссылка на фейсбук"
+                  ></a>
                 </li>
                 <li class="socials__list">
-                  <a class="socials__link socials__link3" href="#"></a>
+                  <a
+                    class="socials__link socials__link3"
+                    href="#"
+                    aria-label="ссылка на инстаграмм"
+                  ></a>
                 </li>
               </ul>
             </section>
@@ -637,6 +851,7 @@
               <a
                 class="feedback__text feedback__gold"
                 href="mailto:mail@htmlacademy.ru"
+                aria-label="ссылка на электоронную почту"
                 >mail@htmlacademy.ru</a
               >
             </section>
@@ -645,6 +860,7 @@
               <a
                 class="developed__link feedback__gold"
                 href="https://up.htmlacademy.ru/htmlcss/31"
+                aria-label="ссылка на разработчика"
                 >htmlacademy.ru</a
               >
             </section>
@@ -653,5 +869,6 @@
       </section>
     </footer>
     <script src="js/popup-buy.js"></script>
+    <script src="js/popup-buy-min.js"></script>
   </body>
 </html>
