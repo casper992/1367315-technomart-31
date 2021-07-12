@@ -589,6 +589,7 @@
   background-color: var(--basic-purple);
 }
 .list4 {
+  background-color: var(--basic-gray);
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
@@ -791,6 +792,7 @@
   margin-bottom: 70px;
 }
 .popular__list {
+  position: relative;
   width: 220px;
   min-height: 318px;
   display: -webkit-box;
@@ -809,6 +811,9 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-right: 20px;
+}
+
+.popular__list:hover {
 }
 .popular__list:first-child {
   padding-top: 6px;
@@ -2022,10 +2027,12 @@
   left: 41px;
   background-color: var(--basic-white);
 }
-.punchers__list:hover .list__hover {
+.punchers__list:hover .list__hover,
+.popular__list:hover .list__hover {
   display: block;
 }
-.punchers__list:hover .punchers__img {
+.punchers__list:hover .punchers__img,
+.popular__list:hover .popular__img {
   opacity: 0;
 }
 .button__bookmarks:hover {
