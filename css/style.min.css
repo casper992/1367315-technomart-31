@@ -577,7 +577,7 @@
 }
 .list1 {
   background: url(../img/index/new.png) no-repeat 100% 0,
-    url(/img/index/icon-1.svg) no-repeat 213px 30px;
+    url(../img/index/icon-1.svg) no-repeat 213px 30px;
   background-color: var(--basic-yelow);
 }
 .list2 {
